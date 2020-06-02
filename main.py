@@ -28,7 +28,7 @@ def check_password(string, zFile, nowtime, time):
 		attempt = itertools.product(string, repeat = len)
 		for attemptst in attempt:
 			passwd = ''.join(attemptst)
-			print(":" + passwd)
+			print("대입한 비밀번호: " + passwd)
 			print(time.time() - nowtime)
 			try:
 				zFile.extractall(pwd = passwd.encode())
