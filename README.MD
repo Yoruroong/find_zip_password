@@ -39,7 +39,7 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 - ZZ.zip : 3초 이하
 - ASD.zip : 55초 이하
 - 1234.zip : 195초 이하
-- asdf.zip : 테스트해보지 않음
+- asdf.zip : 990초 이하
 
 # 제한 사항
 - 싱글 코어만 사용합니다.
@@ -47,3 +47,6 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 
 # 업데이트 예정
 1. 멀티코어 지원
+
+# List
+[https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou-75.txt](https://github.com/danielmiessler/SecLists/blob/master/Passwords/Leaked-Databases/rockyou-75.txt)
