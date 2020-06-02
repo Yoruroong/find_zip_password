@@ -12,7 +12,7 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 # 예상되는 시간 (소문자, 대문자, 특수문자, 숫자)
 > 최신 i5 CPU 기준입니다.
 - 1자리 : 1초 미만
-- 2자리 : 10초 미만
+- 2자리 : 5초 미만
 - 3자리 : 150초 미만
 - 4자리 : 20000초 미만
 
@@ -20,5 +20,12 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 > 테스트를 위한 샘플 파일입니다. 각각의 압출 파일의 암호는 파일명에 포함되어 있습니다. Skylake 가상 코어 기준입니다.
 - Z.zip : 1초 이하
 - ZZ.zip : 3초 이하
-- ASD.zip : 82초
-- 1234.zip : 395초
+- ASD.zip : 82초 이하
+- 1234.zip : 395초 이하
+
+# 제한 사항
+- 싱글 코어만 사용합니다.
+- zip 파일만 지원합니다
+
+# 업데이트 예정
+1. 멀티코어 지원
