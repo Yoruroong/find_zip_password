@@ -2,10 +2,16 @@
 
 > 이 레포지토리를 써서 일어나는 일의 모든 책임은 이용자에게 있습니다.
 
-# install
+# 기능 소개
+이 코드는 압축 팡ㄹ의 암호를 잊어버린 경우, 암호를 무차별 대입하여 암호를 찾아주는 코드입니다.
+
+## 사용 방법
+### install 
 ```
 git clone https://github.com/Yoruroong/zip_password_recovery
 ```
+### 실행
+`py main.py`
 
 소스코드를 다운받으셔도 무방합니다.
 
@@ -17,11 +23,12 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 - 4자리 : 20000초 미만
 
 ## 샘플 파일
-> 테스트를 위한 샘플 파일입니다. 각각의 압출 파일의 암호는 파일명에 포함되어 있습니다. Skylake 가상 코어 기준입니다.
+> 테스트를 위한 샘플 파일입니다. 각각의 압출 파일의 암호는 파일명에 포함되어 있습니다. Skylake 가상 코어 기준입니다. 조합 : 소문자+대문자+숫자
 - Z.zip : 1초 이하
 - ZZ.zip : 3초 이하
-- ASD.zip : 82초 이하
-- 1234.zip : 395초 이하
+- ASD.zip : 55초 이하
+- 1234.zip : 195초 이하
+- asdf.zip : 3.5
 
 # 제한 사항
 - 싱글 코어만 사용합니다.
