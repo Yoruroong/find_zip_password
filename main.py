@@ -38,12 +38,27 @@ def check_password(string, zFile, nowtime, time):
 			except:
 				pass
 
+def check_password_by_list(string, zFile, nowtime, time):
+	f = open("list.txt", 'r', encoding='UTF8')
+	while True:
+		line = f.readline()
+		print(line)
+		try:
+			zFile.extractall(pwd = line.encode())
+			print ("\n\n비밀번호: "+ line)
+			print(time.time() - nowtime)
+			return True
+		except:
+			pass
+	f.close()
+
 def main():
 	zipfilename = input("압축해제할 파일명: ")
 	if zipfile.is_zipfile(zipfilename):
 		zFile = zipfile.ZipFile(zipfilename)
 	
 		string = setting_string()
+		#result = check_password_by_list(string, zFile, nowtime, time)
 		result = check_password(string, zFile, nowtime, time)
 	
 		if result != True: 
