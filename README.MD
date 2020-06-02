@@ -11,9 +11,9 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 
 # 예상되는 시간 (소문자, 대문자, 특수문자, 숫자)
 > 최신 i5 CPU 기준입니다.
-- 1자리 : 2초 미만
-- 2자리 : 20초 미만
-- 3자리 : 100초 미만
+- 1자리 : 1초 미만
+- 2자리 : 10초 미만
+- 3자리 : 150초 미만
 - 4자리 : 20000초 미만
 
 ## 샘플 파일
@@ -21,4 +21,4 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 - Z.zip : 1초 이하
 - ZZ.zip : 3초 이하
 - ASD.zip : 82초
-- 1234.zip : 
+- 1234.zip : 395초
