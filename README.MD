@@ -16,8 +16,10 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 
 ![1](https://yoru.pe.kr/githubimage/1.png)
 1. 압축해제할 파일명을 입력합니다
+
 ![2](https://yoru.pe.kr/githubimage/2.png)
-2. 무차별대입할 문자를 선택합니다
+2. 무차별 대입할 문자를 선택합니다
+
 ![3](https://yoru.pe.kr/githubimage/3.png)
 3. 암호를 찾았습니다
 
