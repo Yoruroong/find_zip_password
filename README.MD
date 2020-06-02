@@ -10,10 +10,17 @@
 ```
 git clone https://github.com/Yoruroong/zip_password_recovery
 ```
+소스코드를 다운받으셔도 무방합니다.
 ### 실행
 `py main.py`
 
-소스코드를 다운받으셔도 무방합니다.
+![1](https://yoru.pe.kr/githubimage/1.png)
+1. 압축해제할 파일명을 입력합니다
+![2](https://yoru.pe.kr/githubimage/2.png)
+2. 무차별대입할 문자를 선택합니다
+![3](https://yoru.pe.kr/githubimage/3.png)
+3. 암호를 찾았습니다
+
 
 # 예상되는 시간 (소문자, 대문자, 특수문자, 숫자)
 > 최신 i5 CPU 기준입니다.
@@ -28,7 +35,7 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 - ZZ.zip : 3초 이하
 - ASD.zip : 55초 이하
 - 1234.zip : 195초 이하
-- asdf.zip : 3.5
+- asdf.zip : 테스트해보지 않음
 
 # 제한 사항
 - 싱글 코어만 사용합니다.
