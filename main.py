@@ -3,8 +3,9 @@ import itertools
 import zipfile
 import time
 import os
+from platform import platform
 
-nowtime = time.time()
+nowtime = 0
 
 def setting_string():
 	print ("\n1: 소문자\n2: 소문자, 대문자\n3: 소문자, 대문자, 숫자\n4: 소문자, 대문자, 숫자, 특수문자\n5: 숫자")
@@ -29,13 +30,17 @@ def check_password(string, zFile, nowtime, time):
 		for attemptst in attempt:
 			passwd = ''.join(attemptst)
 			print("대입한 비밀번호: " + passwd)
-			print(time.time() - nowtime)
+			print(str(int(time.time()) - nowtime) + "초")
 			try:
 				zFile.extractall(pwd = passwd.encode())
 				print ("\n\n비밀번호: "+passwd)
-				print(time.time() - nowtime)
+				print(str(int(time.time()) - nowtime) + "초")
 				return True
 			except:
+				if platform().startswith("Linux"): cc = "clear" 
+				else: cc = "cls"
+
+				os.system(cc)
 				pass
 
 def check_password_by_list(string, zFile, nowtime, time):
@@ -46,7 +51,7 @@ def check_password_by_list(string, zFile, nowtime, time):
 		try:
 			zFile.extractall(pwd = line.encode())
 			print ("\n\n비밀번호: "+ line)
-			print(time.time() - nowtime)
+			print(str(int(time.time()) - nowtime) + "초")
 			return True
 		except:
 			pass
@@ -58,7 +63,9 @@ def main():
 		zFile = zipfile.ZipFile(zipfilename)
 	
 		string = setting_string()
+		nowtime = int(time.time())
 		#result = check_password_by_list(string, zFile, nowtime, time)
+
 		result = check_password(string, zFile, nowtime, time)
 	
 		if result != True: 
