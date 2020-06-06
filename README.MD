@@ -34,7 +34,7 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 - 4자리 : 20000초 미만
 
 ## 샘플 파일
-> 테스트를 위한 샘플 파일입니다. 각각의 압축 파일의 암호는 파일명에 포함되어 있습니다. Skylake 가상 코어 기준입니다. 조합 : 소문자+대문자+숫자
+> 테스트를 위한 샘플 파일입니다. samples폴더에 위치해 있으며, 각각의 압축 파일의 암호는 파일명에 포함되어 있습니다. Skylake 가상 코어 기준입니다. 조합 : 소문자+대문자+숫자
 - Z.zip : 1초 이하
 - ZZ.zip : 3초 이하
 - ASD.zip : 55초 이하
