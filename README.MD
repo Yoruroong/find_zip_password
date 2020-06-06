@@ -27,7 +27,7 @@ git clone https://github.com/Yoruroong/zip_password_recovery
 
 
 # 예상되는 시간 (소문자, 대문자, 특수문자, 숫자)
-> 최신 i5 CPU 기준입니다.
+> i5-9400f 기준
 - 1자리 : 1초 미만
 - 2자리 : 5초 미만
 - 3자리 : 150초 미만
